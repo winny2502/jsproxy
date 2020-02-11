@@ -108,13 +108,13 @@ local function nodeSwitched()
 end
 
 -- 节点切换功能，目前还在测试中（demo 中已开启）
-if nodeSwitched() then
-  return
-end
-
-
-local h, err = ngx.resp.get_headers()
-for k, v in pairs(h) do
+--if nodeSwitched() then
+--  return
+--end
+--
+--
+--local h, err = ngx.resp.get_headers()
+--for k, v in pairs(h) do
   if
     -- 这些头有特殊意义，需要转义 --
     k == 'access-control-allow-origin' or

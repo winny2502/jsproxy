@@ -136,12 +136,12 @@ for k, v in pairs(h) do
   elseif detail and
     -- 非简单头无法被 fetch 读取，需添加到 aceh 列表 --
     -- https://developer.mozilla.org/en-US/docs/Glossary/Simple_response_header
-    k ~= 'cache-control' and
-    k ~= 'content-language' and
-    k ~= 'content-type' and
-    k ~= 'expires' and
-    k ~= 'last-modified' and
-    k ~= 'pragma'
+-- k ~= 'cache-control' and
+-- k ~= 'content-language' and
+-- k ~= 'content-type' and
+-- k ~= 'expires' and
+-- k ~= 'last-modified' and
+-- k ~= 'pragma'
   then
     expose = expose .. ',' .. k
   end
